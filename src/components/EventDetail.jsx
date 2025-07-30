@@ -53,6 +53,7 @@ const EventDetail = () => {
         <div className="mt-12 bg-white p-6 rounded-lg shadow-md">
           <div className="h-64 w-full bg-gray-200 rounded-lg overflow-hidden">
             <iframe 
+            title="Lokasi Pernikahan"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.028920711012!2d115.25972231533865!3d-8.733752393758266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246bc8b3b08a5%3A0x4c1e3b0d5b9d5b1f!2sUbud%2C%20Gianyar%2C%20Bali!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" 
               width="100%" 
               height="100%" 
