@@ -4,12 +4,12 @@ const Gift = () => {
   const bankAccounts = [
     {
       bank: 'BCA',
-      name: 'I Ketut Surya',
+      name: 'I Made Surya',
       number: '123 456 7890'
     },
     {
       bank: 'Mandiri',
-      name: 'Ayu Dewi',
+      name: 'Demaria',
       number: '098 765 4321'
     }
   ];

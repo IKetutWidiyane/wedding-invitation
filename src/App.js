@@ -33,17 +33,16 @@ function App() {
       {showRoute && <Route />}
 
       {/* Konten Utama */}
-      <div className="overflow-hidden">
-        <Hero />
-        <Quote />
-        <CoupleProfile />
-        <EventDetail />
-        <Countdown />
-        <LoveStory />
-        <RSVP />
-        <Gift />
-        <Footer />
-      </div>
+     <div className="overflow-hidden">
+  <div id="Hero"><Hero /></div>
+  <div id="Couple"><CoupleProfile /></div>
+  <div id="Events"><EventDetail /></div>
+  <div id="Story"><LoveStory /></div>
+  <div id="RSVP"><RSVP /></div>
+  <div id="Gift"><Gift /></div>
+  <Footer />
+</div>
+
 
       {/* Musik Latar (hidden audio element) */}
       <audio id="bgMusic" loop>

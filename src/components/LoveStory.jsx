@@ -3,7 +3,7 @@ const LoveStory = () => {
     {
       year: "2018",
       title: "Pertemuan Pertama",
-      description: "Bertemu di kampus Universitas Udayana"
+      description: "Bertemu di kampus Universitas Lampung"
     },
     {
       year: "2020",

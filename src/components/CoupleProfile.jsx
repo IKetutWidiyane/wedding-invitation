@@ -1,9 +1,11 @@
 import { FaInstagram } from 'react-icons/fa';
 
+import madeft from '../assets/images/made.png';
+import demaft from '../assets/images/dema.png';
 const CoupleProfile = () => {
   // Replace with actual Instagram URLs or remove if not needed
-  const groomInstagram = "https://instagram.com/ketutsurya";
-  const brideInstagram = "https://instagram.com/ayudewi";
+  const groomInstagram = "https://instagram.com/made";
+  const brideInstagram = "https://instagram.com/dema";
 
   return (
     <section className="py-16 px-4 bg-white" id="couple">
@@ -15,13 +17,13 @@ const CoupleProfile = () => {
           <div className="text-center">
             <div className="rounded-full overflow-hidden border-4 border-rose-400 w-48 h-48 mx-auto mb-6 shadow-lg">
               <img 
-                src="/images/groom.jpg" 
-                alt="I Ketut Surya - Mempelai Pria" 
+                src={madeft} 
+                alt="Made  - Mempelai Pria" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
-            <h3 className="text-2xl font-semibold mb-2">I Ketut Surya</h3>
+            <h3 className="text-2xl font-semibold mb-2">Made</h3>
             <p className="text-gray-600 mb-1">Putra pertama dari</p>
             <p className="text-gray-600 mb-4">Bapak Nyoman & Ibu Komang</p>
             
@@ -33,11 +35,11 @@ const CoupleProfile = () => {
                 className="text-rose-600 hover:text-rose-700 flex items-center justify-center gap-2"
                 aria-label="Instagram Mempelai Pria"
               >
-                <FaInstagram /> @ketutsurya
+                <FaInstagram /> @made
               </a>
             ) : (
               <div className="text-rose-600 flex items-center justify-center gap-2">
-                <FaInstagram /> @ketutsurya
+                <FaInstagram /> @made
               </div>
             )}
           </div>
@@ -48,13 +50,13 @@ const CoupleProfile = () => {
           <div className="text-center">
             <div className="rounded-full overflow-hidden border-4 border-rose-400 w-48 h-48 mx-auto mb-6 shadow-lg">
               <img 
-                src="/images/bride.jpg" 
-                alt="Ayu Dewi - Mempelai Wanita" 
+                src={demaft}
+                alt="Demaria - Mempelai Wanita" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
-            <h3 className="text-2xl font-semibold mb-2">Ayu Dewi</h3>
+            <h3 className="text-2xl font-semibold mb-2">Demaria</h3>
             <p className="text-gray-600 mb-1">Putri kedua dari</p>
             <p className="text-gray-600 mb-4">Bapak Wayan & Ibu Made</p>
             
@@ -66,11 +68,11 @@ const CoupleProfile = () => {
                 className="text-rose-600 hover:text-rose-700 flex items-center justify-center gap-2"
                 aria-label="Instagram Mempelai Wanita"
               >
-                <FaInstagram /> @ayudewi
+                <FaInstagram /> @demaria
               </a>
             ) : (
               <div className="text-rose-600 flex items-center justify-center gap-2">
-                <FaInstagram /> @ayudewi
+                <FaInstagram /> @demaria
               </div>
             )}
           </div>
