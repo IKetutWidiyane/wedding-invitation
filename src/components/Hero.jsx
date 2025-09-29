@@ -25,7 +25,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-great-vibes text-5xl md:text-7xl text-white mb-4 drop-shadow-lg">
-            Made & Demaria
+            Made & Putu
           </h1>
           <p className="text-lg md:text-2xl text-white mb-6 tracking-widest uppercase drop-shadow-md">
             30 Agustus 2025

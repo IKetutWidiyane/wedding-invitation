@@ -1,11 +1,11 @@
 import { FaInstagram } from 'react-icons/fa';
 
-import madeft from '../assets/images/made.png';
-import demaft from '../assets/images/dema.png';
+import madeft from '../assets/images/made.jpg';
+import putuft from '../assets/images/putu.jpg';
 const CoupleProfile = () => {
   // Replace with actual Instagram URLs or remove if not needed
   const groomInstagram = "https://instagram.com/made";
-  const brideInstagram = "https://instagram.com/dema";
+  const brideInstagram = "https://instagram.com/putu";
 
   return (
     <section className="py-16 px-4 bg-white" id="couple">
@@ -50,13 +50,13 @@ const CoupleProfile = () => {
           <div className="text-center">
             <div className="rounded-full overflow-hidden border-4 border-rose-400 w-48 h-48 mx-auto mb-6 shadow-lg">
               <img 
-                src={demaft}
-                alt="Demaria - Mempelai Wanita" 
+                src={putuft}
+                alt="Putu - Mempelai Wanita" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
-            <h3 className="text-2xl font-semibold mb-2">Demaria</h3>
+            <h3 className="text-2xl font-semibold mb-2">Putu</h3>
             <p className="text-gray-600 mb-1">Putri kedua dari</p>
             <p className="text-gray-600 mb-4">Bapak Wayan & Ibu Made</p>
             
@@ -68,11 +68,11 @@ const CoupleProfile = () => {
                 className="text-rose-600 hover:text-rose-700 flex items-center justify-center gap-2"
                 aria-label="Instagram Mempelai Wanita"
               >
-                <FaInstagram /> @demaria
+                <FaInstagram /> @putu
               </a>
             ) : (
               <div className="text-rose-600 flex items-center justify-center gap-2">
-                <FaInstagram /> @demaria
+                <FaInstagram /> @putu
               </div>
             )}
           </div>

@@ -9,7 +9,7 @@ const Gift = () => {
     },
     {
       bank: 'Mandiri',
-      name: 'Demaria',
+      name: 'Putu ira',
       number: '098 765 4321'
     }
   ];
