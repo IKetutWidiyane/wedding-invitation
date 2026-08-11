@@ -1,5 +1,4 @@
 import SectionTitle from '../components/wedding/SectionTitle';
-import ImageReveal from '../components/animation/ImageReveal';
 import Reveal from '../components/animation/Reveal';
 
 const Gallery = () => {

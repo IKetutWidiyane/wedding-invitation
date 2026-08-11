@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import madeft from '../assets/images/made.jpg';
 import putuft from '../assets/images/putu.jpg';
 import SectionTitle from '../components/wedding/SectionTitle';

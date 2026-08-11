@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const GoldButton = ({ children, href, onClick, className = '', variant = 'outline' }) => {
+const GoldButton = ({ children, href, onClick, type = 'button', className = '', variant = 'outline' }) => {
   const baseStyles = 'inline-block px-8 py-3 text-sm uppercase tracking-widest-2 transition-all duration-300 cursor-pointer';
   const variants = {
     outline: 'border border-champagne text-mocha hover:bg-gold hover:text-warm-white hover:border-gold',
@@ -26,7 +26,7 @@ const GoldButton = ({ children, href, onClick, className = '', variant = 'outlin
   }
 
   return (
-    <button onClick={onClick}>
+    <button type={type} onClick={onClick}>
       {content}
     </button>
   );

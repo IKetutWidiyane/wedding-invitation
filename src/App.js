@@ -1,54 +1,51 @@
-import React, { useState } from 'react';
-import Hero from './components/Hero';
-import Quote from './components/Quote';
-import CoupleProfile from './components/CoupleProfile';
-import EventDetail from './components/EventDetail';
-import Countdown from './components/Countdown';
-import LoveStory from './components/LoveStory';
-import RSVP from './components/RSVP';
-import Gift from './components/Gift';
-import Footer from './components/Footer';
-import Route from './components/Route';
+import React from 'react';
+import SmoothScroll from './components/smooth/SmoothScroll';
+import MusicPlayer from './components/wedding/MusicPlayer';
+import Hero from './sections/Hero';
+import Couple from './sections/Couple';
+import Story from './sections/Story';
+import Event from './sections/Event';
+import Countdown from './sections/Countdown';
+import Gallery from './sections/Gallery';
+import Location from './sections/Location';
+import RSVP from './sections/RSVP';
+import Wishes from './sections/Wishes';
+import Closing from './sections/Closing';
 
 function App() {
-  const [showRoute, setShowRoute] = useState(false);
-
-  // Efek untuk menampilkan navigasi saat scroll
-  React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowRoute(true);
-      } else {
-        setShowRoute(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div className="relative">
-      {/* Navigasi */}
-      {showRoute && <Route />}
+    <SmoothScroll>
+      <div className="relative">
+        <main>
+          <Hero />
+          <Couple />
+          <Story />
+          <Event />
+          <Countdown />
+          <Gallery />
+          <Location />
+          <RSVP />
+          <Wishes />
+          <Closing />
+        </main>
 
-      {/* Konten Utama */}
-     <div className="overflow-hidden">
-  <div id="Hero"><Hero /></div>
-  <div id="Couple"><CoupleProfile /></div>
-  <div id="Events"><EventDetail /></div>
-  <div id="Story"><LoveStory /></div>
-  <div id="RSVP"><RSVP /></div>
-  <div id="Gift"><Gift /></div>
-  <Footer />
-</div>
+        <footer className="py-12 px-4 bg-ivory text-center">
+          <div className="max-w-4xl mx-auto">
+            <p className="font-display text-2xl text-dark-brown mb-4">
+              Made & Putu
+            </p>
+            <p className="text-taupe text-sm mb-2">
+              Made with love
+            </p>
+            <p className="text-taupe text-xs">
+              © 2025
+            </p>
+          </div>
+        </footer>
 
-
-      {/* Musik Latar (hidden audio element) */}
-      <audio id="bgMusic" loop>
-        <source src="/music/background.mp3" type="audio/mpeg" />
-      </audio>
-    </div>
+        <MusicPlayer />
+      </div>
+    </SmoothScroll>
   );
 }
 
